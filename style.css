@@ -1,0 +1,338 @@
+* {
+    margin:0;
+}
+.head_bar{
+    background-color:#3A7CA5;
+    height:40px;
+    align-items:center;
+}
+.logo{
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  display:flex; 
+}
+.logo a{
+    margin:0px;
+    color:white;
+    text-decoration:none;
+}
+.head_bar {
+    display:flex; 
+    justify-content:space-between;
+}
+.head_links {
+    display:flex;
+    justify-content: space-evenly;
+}
+.head_links a{
+    margin-left:50px;
+    color:white;
+    text-decoration: none;
+}
+.head_social i,a{
+    margin-left:15px;
+    color:white;
+    text-decoration: none;
+}
+.head_links a:hover{
+    transform:scale(1.2)
+}
+.head_social :hover{
+    transform:scale(1.2)
+}
+.main_body {
+    display:flex;
+    align-items:flex-start; 
+}
+.main_links{
+    margin-top:220px;
+    width:150px;
+    border:1px,solid,white;
+    border-radius:10px;
+    transition: all 0.5s ease;
+    filter: drop-shadow(0 0 20px #000712)
+            drop-shadow(0 0 40px #02184B)
+            drop-shadow(0 0 60px #275DBF)
+}
+.main_links:hover {
+    margin-left:15px;
+    transform:scale(1.2)
+}
+.main_photos {
+    margin:100px;
+    flex:1;
+    overflow:hidden;
+    border:1px,solid,white;
+    border-radius:10px;
+    transition:all 0.2s ease;
+    filter: drop-shadow(0 0 20px #000712)
+            drop-shadow(0 0 40px #02184B)
+            drop-shadow(0 0 60px #275DBF)
+}
+.main_photos img{
+    width:100%;
+    height:auto;
+    display:block;
+    transition:all 0.5s ease;
+}
+.main_photos h3{
+    bottom:60px;
+    font-size:1rem;
+}
+.main_photos:hover {
+    transform:scale(1);
+    margin-right:10px;
+}
+.back_top button{
+    background-color:transparent;
+    color:white;
+    height:50px;
+    width:500px;
+    border-radius:10px;
+}
+.right {
+    display:flex;
+    justify-content: end;
+    margin-top:-100px;
+}
+.legal {
+    margin-top:0px;
+    margin-left:100px;
+}
+.foot_text {
+    display:inline-block;
+}
+.me{
+    margin-top :200px;
+    display:inline-block;
+}
+.me_color {
+    color:#3A7CA5;
+}
+.me h1 {
+    font-size:50px;
+}
+.me h3 {
+    font-size:30px;
+}
+#me_button {
+    background-color:#3A7CA5;
+    border-radius:10px;
+    width:100px;
+    height:30px;   
+}
+.laptop {
+    position:relative;
+    animation:float 4s infinite ease-in-out;
+}
+.laptop img{
+    width:600px;
+    filter: drop-shadow(0 0 20px #000712)
+            drop-shadow(0 0 40px #02184B)
+            drop-shadow(0 0 60px #275DBF)
+
+}
+@keyframes float {
+    0%,100% {transform:translateY(0);}
+    50% {transform:translateY(-10px);}
+}
+.screen {
+    position:absolute;
+    top:12%;
+    left:10%;
+    width:80%;
+    height:65%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:monospace;
+    font-size:1.3rem;
+    color:#00ffcc;
+    background: transparent;
+    text-align:center;
+    overflow:hidden;
+}
+#typing_text {
+    border-right:2px solid #00ffcc;
+    white-space:nowrap;
+}
+.quote{
+    margin-left:700px;
+    margin-top:50px;
+    font-size:1.1rem;
+    text-align:center;
+    color:#ccc;
+}
+.laptop_container{
+    display:flex;
+    justify-content:flex-end;
+    margin-right:50px;
+    margin-top:-300px;
+}
+.foots {
+    margin-top:350px;
+}
+.works {
+    margin-top:50px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.work1 {
+    height:200px;
+    width:400px;
+    border:#000712 1px solid;
+    border-radius:15px;
+    transition:all 0.5s ease;
+}
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 15px;
+    text-align: center;
+}
+.work1 img {
+    height:200px;
+    width:400px;
+    border-radius:15px;
+    position:relative;
+}
+.work2 {
+    height:200px;
+    width:400px;
+    border:#000712 1px solid;
+    border-radius:15px;
+    transition:all 0.5s ease;
+}
+.work2 img {
+    height:200px;
+    width:400px;
+    border-radius:15px;
+}
+.work3 {
+    height:200px;
+    width:400px;
+    border:#000712 1px solid;
+    border-radius:15px;
+    transition:all 0.5s ease;
+}
+.work3 img {
+    height:200px;
+    width:400px;
+    border-radius:15px;
+}
+.work4 {
+    height:200px;
+    width:400px;
+    border:#000712 1px solid;
+    border-radius:15px;
+    margin-top:50px;
+    transition:all 0.5s ease;
+}
+.work4 img {
+    height:200px;
+    width:400px;
+    border-radius:15px;
+}
+.work5 {
+    height:200px;
+    width:400px;
+    border:#000712 1px solid;
+    border-radius:15px;
+    margin-top:50px;
+    transition:all 0.5s ease;
+}
+.work5 img {
+    height:200px;
+    width:400px;
+    border-radius:15px;
+}
+.more_work {                       /*this is the last div for adding more projects  */
+    height:200px;
+    width:400px;
+    border:#000712 1px solid;
+    border-radius:15px;
+    margin-top:50px;
+    transition:all 0.5s ease;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.work1:hover{
+    transform:scale(1.1);
+
+}
+.work2:hover{
+    transform:scale(1.1);
+
+}
+.work3:hover{
+    transform:scale(1.1);
+}
+.work4:hover{
+    transform:scale(1.1);
+}
+.work5:hover{
+    transform:scale(1.1);
+}
+.more_work:hover{
+    transform:scale(1.1);
+    background-color:#3A7CA5;
+}
+.work1:hover .text{
+    opacity:1;
+    filter:blur(0px);
+}
+.work2:hover .text{
+    opacity:1;
+    filter:blur(0px);
+}
+.work3:hover .text{
+    opacity:1;
+    filter:blur(0px);
+}
+.work4:hover .text{
+    opacity:1;
+    filter:blur(0px);
+}
+.work5:hover .text{
+    opacity:1;
+    filter:blur(0px);
+}
+.work1:hover img,
+.work2:hover img,
+.work3:hover img,
+.work4:hover img,
+.work5:hover img {
+    filter: blur(2px);
+}
+.work1, .work2, .work3, .work4, .work5, .more_work {
+    position: relative; 
+}
+.mail button{
+    background-color:#3A7CA5;
+    border-radius:10px;
+    width:150px;
+    height:30px;    
+}
+.contact_text {
+    margin-top:100px;
+}
+.mail:hover button{
+    transform:scale(1.2);
+}
+.contact_form _divi :hover{
+    transform:scale(1.2)
+}

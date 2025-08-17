@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<header>
+<div class="head_bar">
+    <div class="logo">
+        <a href="index.html"><h1>AJ</h1></a>
+    </div>
+    <div class="head_links">
+        <a href="about.html">About me </a>
+        <a href="work.html">My work</a>
+        <a href="contact.html   ">Contact me </a>
+        <a href="hire.html">Hire me</a>
+    </div>
+    <div class="head_social">
+        <a href="https://www.instagram.com/ar1h4ntt"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/Arihant83586993"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/arihant-jain-348501215"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ArihantJain2008"style="margin-right:10px;"><i class="fa-brands fa-github"></i></a>
+    </div>
+</div>
+</header>
+<body>
+    <div class="main_body">
+        <div class="main_links">
+            <a href="mailto:jainfamily30@gmail.com">Email</a><br><br><br><br>
+            <a href="https://www.linkedin.com/in/arihant-jain-348501215">Linkedin</a><br><br><br><br>
+            <a href="https://github.com/ArihantJain2008">GIT Hub</a><br><br>
+        </div>
+        <div class="main_photos">
+            <center><h2 class="work">MY WORK</h2></center>
+            <a id="projectLink" href="#" target="_blank">
+                <img id="slide" src="Screenshot (60).png" alt="Project Preview">
+                </a><br>
+
+            <h3 id="head">RETRO QUEST</h3><br>
+            <p id=caption>"Retro Quest Game – A nostalgic arcade-style experience."</p>
+            </span>
+        </div>
+    </div>
+
+<!-- script -->
+
+    <script>
+            const slides = [
+
+                                                // TO ADD MORE PROJECTS
+
+                {
+                    src: "Screenshot (60).png",
+                    heading:"RETRO QUEST",
+                    text:"Retro Quest Game – A nostalgic arcade-style experience.",
+                    link:"https://arihantjain2008.github.io/RETRO-GAME"
+                },
+                {
+                    src: "Screenshot (64).png",
+                    heading:"PEEK-PROOF LOGIN PAGE",
+                    text: "Peek-Proof Login Page – Secure and stylish authentication.",
+                    link:"https://arihantjain2008.github.io/PEEK-PROOF-LOGIN-PAGE/"
+                },
+                {
+                    src: "Screenshot (25).png",
+                    heading:"LANDING PAGE",
+                    text: "A sleek, neon-inspired landing page that blends AI aesthetics with modern web design.",
+                    link:"https://arihantjain2008.github.io/LANDING-PAGE/"
+                },
+                {
+                    src: "Screenshot (66).png",
+                    heading:"FASHION STORE",
+                    text: "A modern fashion store landing page designed to showcase trends with elegance and style.",
+                    link:"https://arihantjain2008.github.io/FASHION-STORE/"
+                },
+                {
+                    src: "Screenshot (40).png",
+                    heading:"AMAZONE HOME PAGE",
+                    text: "A responsive Amazon home page replica built with clean HTML and CSS for a seamless shopping interface.",
+                    link:"https://arihantjain2008.github.io/AMAZON-HOME-PAGE/"
+                }
+];
+let index = 0;
+function ChangeImg() {
+    index = (index+ 1) % slides.length;
+    document.getElementById("slide").src = slides[index].src;
+    document.getElementById("head").textContent = slides[index].heading;
+    document.getElementById("caption").textContent = slides[index].text;
+    document.getElementById("projectLink").href = slides[index].link || "#";
+}
+        </script>
+</body>
+<hr>
+<footer>
+    <div class="foots">
+        <div class="logo">
+        <a href="index.html"><h1>AJ</h1></a><br>
+        </div>
+        <div class="foot_text"><br><br>
+            <p>"I design and develop modern, responsive websites that don’t just look good — they work flawlessly.</p>
+            <p>From sleek portfolios to secure web applications, I turn ideas into interactive experiences.</p>
+            <p>Let’s build something amazing together."</p><br><br>
+        </div>
+        <div class="foot_social">
+            <a href="https://www.instagram.com/ar1h4ntt"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/Arihant83586993"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/arihant-jain-348501215"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ArihantJain2008"style="margin-right:10px;"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="right">
+        <div class="map">
+            <p><b>Site Map</b></p><br><br>
+            <a href="index.html">Homepage</a><br><br>
+            <a href="work.html">My work</a><br><br>
+            <a href="contact.html">Contact me</a><br><br>
+            <a href="">Hire me</a><br><br>
+        </div>
+        <div class="legal">
+            <p><b>Legal</b></p><br><br>
+            <p>Privacy Policy</p><br><br>
+            <p>Terms of Services</p><br><br>
+            <p>Lawer's Corners</p>
+        </div>
+        </div>
+        <div class="back_top">
+            <center><button id="back_top">BACK TO TOP</button></center>
+        </div>
+    </div>
+    <script>
+        setInterval(ChangeImg,5000);
+let back_top = document.getElementById("back_top");
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 200) {
+        back_top.style.display = "block";
+    }
+    else {
+        back_top.style.display = "none";
+    }
+};
+back_top.onclick = function () {
+    window.scrollTo ({
+        top:0,
+        behavior:"smooth"
+    });
+};
+    </script>
+</footer>
+</html>

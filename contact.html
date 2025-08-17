@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<header>
+<div class="head_bar">
+    <div class="logo">
+        <a href="index.html"><h1>AJ</h1></a>
+    </div>
+    <div class="head_links">
+        <a href="about.html">About me </a>
+        <a href="work.html">My work</a>
+        <a href="contact.html">Contact me </a>
+        <a href="">Hire me</a>
+    </div>
+    <div class="head_social">
+        <a href="https://www.instagram.com/ar1h4ntt"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/Arihant83586993"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/arihant-jain-348501215"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ArihantJain2008"style="margin-right:10px;"><i class="fa-brands fa-github"></i></a>
+    </div>
+</div>
+</header>
+<body>
+    <center>
+    <div class="contact_text">
+    <b><p style="font-size:small;">CONTACT ME</p></b><br>
+    <h1>Get in touch with me</h1><br>
+    <p>Fill out the form below or schedule a meeting with us at your conveneince.</p>
+    </div>
+    <div class="contact_form_div">
+    <form id="contact_form">
+        <label>NAME:</label><br>
+        <input type="text" name="user_name" placeholder="Your Name"><br><br>
+        <label>Email:</label><br>
+        <input type="text" name="user_email" placeholder="Enter your Email"><br><br>
+        <label>MESSAGE:</label><br>
+        <input type="text" name="message" placeholder="Enter your Message"> <br><br><br>
+        <span class="mail"><button type="submit">Send Your Request</button></span><br><br><br>
+        <p><b>You can also Contact me Via</b></p><br>
+        <a href="mailto:jainfamily30@gmail.com"><i class="fa-regular fa-envelope"></i></a>&nbsp &nbsp
+        <i class="fa-solid fa-phone">91+ 8448368100</i>
+    </form>
+    </div>
+    </center>
+</body>
+<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+<script>
+  // Initialize EmailJS with your user ID
+  emailjs.init("rn8O3kG8Gj60XhUTe");  
+
+  // Handle form submit
+  document.getElementById('contact_form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent page reload
+
+      emailjs.sendForm('service_fwqht8u', 'template_tqchdxf', this)
+      .then(function() {
+          alert('Message sent successfully!');
+          document.getElementById('contact_form').reset();
+      }, function(error) {
+          alert('Failed to send message. Please try again.');
+          console.error(error);
+      });
+  });
+</script>
+<footer>
+    <div class="foots">
+        <hr>
+        <div class="logo">
+        <a href="index.html"><h1>AJ</h1></a><br>
+        </div>
+        <div class="foot_text"><br><br>
+            <p>"I design and develop modern, responsive websites that don’t just look good — they work flawlessly.</p>
+            <p>From sleek portfolios to secure web applications, I turn ideas into interactive experiences.</p>
+            <p>Let’s build something amazing together."</p><br><br>
+        </div>
+        <div class="foot_social">
+            <a href="https://www.instagram.com/ar1h4ntt"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/Arihant83586993"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/arihant-jain-348501215"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ArihantJain2008"style="margin-right:10px;"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="right">
+        <div class="map">
+            <p><b>Site Map</b></p><br><br>
+            <a href="index.html">Homepage</a><br><br>
+            <a href="work.html">My work</a><br><br>
+            <a href="contact.html">Contact me</a><br><br>
+            <a href="">Hire me</a><br><br>
+        </div>
+        <div class="legal">
+            <p><b>Legal</b></p><br><br>
+            <p>Privacy Policy</p><br><br>
+            <p>Terms of Services</p><br><br>
+            <p>Lawer's Corners</p>
+        </div>
+        </div>
+        <div class="back_top">
+            <center><button id="back_top">BACK TO TOP</button></center>
+        </div>
+    </div>
+    <script>
+        setInterval(ChangeImg,5000);
+let back_top = document.getElementById("back_top");
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 200) {
+        back_top.style.display = "block";
+    }
+    else {
+        back_top.style.display = "none";
+    }
+};
+back_top.onclick = function () {
+    window.scrollTo ({
+        top:0,
+        behavior:"smooth"
+    });
+};
+    </script>
+</footer>
+</html>
